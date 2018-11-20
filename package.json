@@ -1,0 +1,28 @@
+{
+  "name": "dashapi",
+  "version": "1.0.0",
+  "description": "books for the march api dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "node",
+    "express",
+    "mongodb",
+    "dashboard"
+  ],
+  "author": "Aaron Toliver",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "browserify": "^16.2.3",
+    "edgejs": "0.0.0",
+    "express": "^4.16.4",
+    "express-edge": "^1.0.0",
+    "express-validator": "^5.3.0",
+    "mongoose": "^5.3.7",
+    "nodemon": "^1.18.5"
+  }
+}

@@ -1,0 +1,37 @@
+@layout('layouts.app')
+
+@section('content')
+
+<div class="container">
+<h1>Update About</h1>
+<form action="" method="POST">
+  <div class="form-group">
+    <label for="name">Name</label>
+  <input type="text" class="form-control" id="name" placeholder="Name" name="name" value="{{about.name}}"/>
+  </div>
+  <div class="form-group">
+      <label for="author">Profession</label>
+  <input type="text" class="form-control" id="profession" placeholder="Profession" name="profession" value="{{about.profession}}"/>
+  </div>
+  <div class="form-group">
+      <label for="content">Description</label>
+  <textarea type="text" class="form-control" id="content" placeholder="Description" name="description" value="" rows="10">{{about.description}}</textarea>
+  </div>
+  <div class="form-group">
+      <label for="description">Footer Email</label>
+  <input type="text" class="form-control" id="footerEmail" placeholder="Footer Email" name="footerEmail" value="{{about.footerEmail}}"/>
+  </div>
+  <div class="form-group">
+      <label for="subject">Footer Description</label>
+  <input type="text" class="form-control" id="footerDescription" placeholder="Footer Description" name="footerDescription" value="{{about.footerDescription}}"/>
+  </div>
+  <br>
+  <div class="text-center">
+  <button class="btn btn-primary" type="submit">Submit</button>
+  </div>
+  <br>
+</form>
+</div>
+
+
+@endsection

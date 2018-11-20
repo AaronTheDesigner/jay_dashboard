@@ -1,0 +1,36 @@
+@layout('layouts.app')
+
+@section('content')
+  <div class="container postsContainer">
+  <h1>{{title}}</h1>    
+    <ul class="list-group">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <a href="/dash/article/create" class="btn">Add Article</a>
+        <a href="/dash/work/create" class="btn">Add Work</a>
+        <a href="/dash/feature/create" class="btn">Add Feature</a>
+        <a href="/dash/event/create" class="btn">Add Event</a>
+      </li>
+    </ul>
+    <br>
+    <hr>
+    <br>
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+        <h5 class="text-center">About</h5>
+        @each(about in abouts)
+          <div class="row">
+          <div class="col-sm-12">
+          <div class="card text-center">
+          <div class="card-body">
+          <h5 class="card-title"> {{about.name}} </h5>
+          <p class="card-text"> {{about.description}} </p>
+          <a href="/dash/about/{{about._id}}/update" class="btn">Update About</a>
+          </div>
+          <div class="card-footer text-muted">
+          {{about.footerEmail}}
+          </div>
+        </div>
+      </div>
+  </div>
+@endeach
+@endsection
